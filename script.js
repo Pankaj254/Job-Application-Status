@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       appliedDate,
       status: "Applied",
     };
-    console.log(applicationForm);
     const alreadyExists = cardsCreated.some(
       (card) => card.applicationUrl === applicationUrl
     );
