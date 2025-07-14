@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-700">
+    <h1>JOB APPLICATION TRACKER</h1>
+    <main>
+      <!-- Left Section -->
+      <div id="left-section" class="hidden">
+        <ul id="application-cards">
+        </ul>
+      </div>
+      <!-- Right Section -->
+      <div id="right-section">
+        <h3>Add New Application</h3>
+        <form action="#" id="application-form">
+          <input
+            type="text"
+            name="company-name"
+            id="company-name"
+            placeholder="Enter Company name"
+          />
+          <input
+            type="text"
+            name="position"
+            id="position"
+            placeholder="Applied for position"
+          />
+          <input
+            type="url"
+            name="applied-url"
+            id="applied-url"
+            placeholder="Application URL"
+          />
+          <input type="date" name="date-applied" id="date-applied" />
+          <button type="submit" id="submit-btn">Create</button>
+        </form>
+        <!-- For testing purpose -->
+        <button id="quick-test" style="margin: 10px; padding: 10px;">Quick Add Dummy Application</button>
+        <!--  -->
+        <h3 id="alert-msg" style="color: white;background-color: red; display: none;" >xdfhgxdfgh</h3>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

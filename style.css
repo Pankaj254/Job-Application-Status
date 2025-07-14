@@ -1,0 +1,171 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1a1a;
+}
+html,
+body {
+  height: 100%;
+}
+main {
+  display: flex !important ;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+}
+#right-section form,
+#right-section h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#right-section h3 {
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+#right-section {
+  background-color: #746f6f;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  width: 30vw;
+}
+input {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+input::placeholder {
+  text-align: center;
+  opacity: 50%;
+}
+input:focus {
+  outline-color: black;
+}
+#submit-btn {
+  background-color: greenyellow;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#submit-btn:hover {
+  background-color: rgb(12, 218, 12);
+}
+body h1 {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: rgb(224, 219, 219);
+  -webkit-text-stroke: 1px #f77272;
+  text-shadow: 1px 1px 0 #f77272, -1px 1px 0 #f77272, 1px -1px 0 #f77272, -1px -1px 0 #f77272,
+    0 0 10px #f77272;
+}
+#left-section {
+  background-color: #3b404d;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  height: 80vh;
+  overflow-y: auto;
+  width: 60vw;
+}
+
+.hidden {
+display: none;
+}
+
+#application-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+#application-cards li {
+  margin: 5px;
+  list-style: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #8b8888;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+}
+.company-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+  gap: 10px;
+}
+.card h4 {
+  text-align: center;
+}
+.card p {
+  text-align: center;
+}
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2px;
+}
+.card-buttons .show-btn {
+  background-color: rgb(253, 209, 11);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-buttons .dlt-btn {
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-edit-btn {
+  text-align: end;
+  cursor: pointer;
+}
+.status-text{
+  background-color: #ffd500ff;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.card-edit-btn>svg:hover {
+  color: rgb(0, 204, 255);
+}
+@media screen and (max-width: 600px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  #left-section {
+    width: 95vw;
+    margin: 10px;
+  }
+  #right-section {
+    width: 95vw;
+    margin: 10px;
+  }
+    
+}

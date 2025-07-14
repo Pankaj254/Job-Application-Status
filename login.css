@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-design {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #00ffe5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00ffe5;
+}
+
+button {
+  padding: 12px;
+  background-color: #00ffe5;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00ccbb;
+}
+
+#reg-confirm,#login-confirm{
+    text-align: center;
+    /* color: rgb(0, 250, 0);
+    color: rgb(255, 0, 0); */
+}
+.hidden {
+  display: none;
+}
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.api-help-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#how-api-btn {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #00ffe5;
+  color: #00ffe5;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#how-api-btn:hover {
+  background-color: rgba(0, 255, 229, 0.1);
+}
+
+#api-guide {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: left;
+}
+
+#api-guide ol {
+  padding-left: 20px;
+}
+
+#api-guide a {
+  color: #00ffe5;
+  text-decoration: underline;
+}
