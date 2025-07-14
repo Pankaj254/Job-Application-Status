@@ -32,11 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     const companyName = companyNameInput.value.trim();
     const positionApplied = appliedPositionInput.value.trim();
-    const applicationUrl = applicationUrlInput.value.trim();
+    const applicationUrl = "https://"+applicationUrlInput.value.trim();
     const appliedDate = appliedDateInput.value.trim();
-    if (!applicationUrl.startsWith('http://') && !applicationUrl.startsWith('https://')) {
-      applicationUrl = 'https://' + applicationUrl;
-    }
     const applicationForm = {
       id: Date.now(),
       companyName,
