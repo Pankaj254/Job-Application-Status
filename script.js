@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const loggedInEmail = localStorage.getItem("loggedInEmail");
   const users = JSON.parse(localStorage.getItem("user")) || [];
   const currentUser = users.find((user) => user.email === loggedInEmail);
-  const applicationForm = document.getElementById("application-form");
   const companyNameInput = document.getElementById("company-name");
   const appliedPositionInput = document.getElementById("position");
   const applicationUrlInput = document.getElementById("applied-url");
@@ -12,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const applicationCardsUl = document.getElementById("application-cards");
   const alertMessage = document.getElementById("alert-msg");
   if (currentUser) {
-    console.log("Logged in successfully!!!")
+
   } else {
     setTimeout(() => {
       window.location.href = "login.html";
@@ -180,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("jobCards", JSON.stringify(cardsCreated));
 
         if (cardsCreated.length === 0) {
-          leftSection.classList.add("hidden"); // Hide the section
+          leftSection.classList.add("hidden");
         }
       }
     });

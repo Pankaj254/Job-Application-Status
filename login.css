@@ -70,8 +70,6 @@ button:hover {
 
 #reg-confirm,#login-confirm{
     text-align: center;
-    /* color: rgb(0, 250, 0);
-    color: rgb(255, 0, 0); */
 }
 .hidden {
   display: none;
