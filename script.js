@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     setTimeout(() => {
       window.location.href = "login.html";
-    },500)
+    }, 500)
   }
   const savedCards = JSON.parse(localStorage.getItem("jobCards")) || [];
   const cardsCreated = [];
@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const positionApplied = appliedPositionInput.value.trim();
     const applicationUrl = applicationUrlInput.value.trim();
     const appliedDate = appliedDateInput.value.trim();
+    if (!applicationUrl.startsWith('http://') && !applicationUrl.startsWith('https://')) {
+      applicationUrl = 'https://' + applicationUrl;
+    }
     const applicationForm = {
       id: Date.now(),
       companyName,
@@ -112,11 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
               <h4 class="position">${applicationForm.positionApplied}</h4>
               <p class="date-applied">${formatDate(
-                applicationForm.appliedDate
-              )}</p>
-              <p class="application-status">Status: <span class="status-text">${
-                applicationForm.status
-              }</span></p>
+      applicationForm.appliedDate
+    )}</p>
+              <p class="application-status">Status: <span class="status-text">${applicationForm.status
+      }</span></p>
               <div class="card-buttons">
                 <button class="show-btn">Show</button>
                 <button class="dlt-btn">Delete</button>
