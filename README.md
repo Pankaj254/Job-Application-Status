@@ -60,8 +60,8 @@ open index.html
 ```bash
 Job-Application-Status/
 │
-├── index.html             # Main dashboard after login
-├── login.html             # Login and Registration form
+├── dashboard.html         # Main dashboard after login
+├── index.html             # Login and Registration form
 ├── login.js               # Handles login, registration, API key logic
 ├── index.js               # Application logic (job cards, Brandfetch API, status updates)
 ├── login.css              # Styled login/registration page

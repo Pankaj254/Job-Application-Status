@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 loginConfirm.textContent = 'Login successfull🎉🎉';
                 loginConfirm.style.color = 'rgb(0, 250, 0)';
                 setTimeout(() => {
-                    window.location.href = 'index.html';
+                    window.location.href = 'dashboard.html';
                 }, 500);
             } else {
                 loginConfirm.textContent = 'Invalid email or password!!!!!!!';
